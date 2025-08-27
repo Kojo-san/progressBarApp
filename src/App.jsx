@@ -9,7 +9,9 @@ function App() {
   const [progress, setProgress] = useState(0)
   
   function updateProgress() {
-    setProgress(progress + 10)   
+    if (progress < 100) {
+      setProgress(progress + 10)
+    }
   }
   return (
     <>
