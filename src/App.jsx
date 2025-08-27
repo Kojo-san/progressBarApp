@@ -11,6 +11,8 @@ function App() {
   function updateProgress() {
     if (progress < 100) {
       setProgress(progress + 10)
+    } else {
+      setProgress(0)
     }
   }
   return (
